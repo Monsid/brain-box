@@ -12,8 +12,8 @@ app.get('/users', (req, res) => {
 });
 
 // Start the server
-app.listen(80, () => {
-    console.log('Well Done reached port 80');
+app.listen(8080, () => {
+    console.log('Well Done reached port 8080');
 });
 
 // In this example, we 're using the mysql package to create a connection pool to our MySQL database. We then define a route that queries the database for all users and returns the results as a JSON object.
