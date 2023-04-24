@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 
 //test responses
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/test', (req, res) => {
+  res.send('Test successful!')
 })
 
 // Start the server
