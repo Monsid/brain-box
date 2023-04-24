@@ -3,13 +3,10 @@ const express = require('express');
 // Create an Express app
 const app = express();
 
-// Define a route that queries the database
-app.get('/users', (req, res) => {
-    pool.query('SELECT * FROM users', (error, results) => {
-        if (error) throw error;
-        res.send(results);
-    });
-});
+//test responses
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 // Start the server
 app.listen(8080, () => {
